@@ -205,9 +205,8 @@ export async function addCommentToThread(
   commentText: string,
   userId: string,
   path: string
-){
-
-connectToDB();
+) {
+  connectToDB();
 
   try {
     // Find the original thread by its ID
